@@ -1,0 +1,47 @@
+#Introduction to Discrete Probability
+
+#1. Probability of cyan - generalized
+
+cyan <- 3
+magenta <- 5
+yellow <- 7
+
+# Assign a variable `p` as the probability of choosing a cyan ball from the box
+
+p <- cyan/(cyan + magenta + yellow)
+# Print the variable `p` to the console
+p
+
+#2. Probability of not cyan - generalized
+
+# `p` is defined as the probability of choosing a cyan ball from a box containing: 3 cyan balls, 5 magenta balls, and 7 yellow balls.
+# Using variable `p`, calculate the probability of choosing any ball that is not cyan from the box
+p <- 12/15
+p
+
+#3. Sampling without replacement - generalized
+
+cyan <- 3
+magenta <- 5
+yellow <- 7
+
+# The variable `p_1` is the probability of choosing a cyan ball from the box on the first draw.
+p_1 <- cyan / (cyan + magenta + yellow)
+
+# Assign a variable `p_2` as the probability of not choosing a cyan ball on the second draw without replacement.
+p_2 <- (magenta + yellow)/(cyan + magenta + yellow - 1)
+
+# Calculate the probability that the first draw is cyan and the second draw is not cyan using `p_1` and `p_2`.
+p_1 * p_2
+
+#3. Sampling with replacement - generalized
+cyan <- 3
+magenta <- 5
+yellow <- 7
+
+# The variable 'p_1' is the probability of choosing a cyan ball from the box on the first draw.
+p_1 <- cyan / (cyan + magenta + yellow)
+# Assign a variable 'p_2' as the probability of not choosing a cyan ball on the second draw with replacement.
+p_2 <- (magenta + yellow)/(cyan + magenta + yellow)
+# Calculate the probability that the first draw is cyan and the second draw is not cyan using `p_1` and `p_2`.
+p_1 * p_2
