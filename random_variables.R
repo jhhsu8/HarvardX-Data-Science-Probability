@@ -51,7 +51,7 @@ p_not_green <- 1-p_green
 # Calculate the expected outcome if you win $17 if the ball lands on green and you lose $1 if the ball doesn't land on green
 (p_not_green * -1) + (p_green * 17)
 
-American Roulette standard error
+#4. American Roulette standard error
 
 # The variables 'green', 'black', and 'red' contain the number of pockets for each color
 green <- 2
@@ -70,7 +70,7 @@ X <- sample(c(-1, 17), 1, replace = TRUE, prob = c(p_not_green , p_green))
 # Print the value of `X` to the console
 abs(-1-17) * sqrt(p_green * p_not_green)
 
-#4. American Roulette sum of winnings
+#5. American Roulette sum of winnings
 
 # The variables 'green', 'black', and 'red' contain the number of pockets for each color
 green <- 2
@@ -98,7 +98,7 @@ S <- sum(X)
 # Print the value of 'S' to the console
 S
 
-#5. American Roulette winnings expected value
+#6. American Roulette winnings expected value
 
 # The variables 'green', 'black', and 'red' contain the number of pockets for each color
 green <- 2
@@ -119,7 +119,7 @@ n <- 1000
 #sum(X * p_green) * n
 (n * p_green * 17) + (n * p_not_green * -1)
 
-#6. American Roulette winnings standard error 
+#7. American Roulette winnings standard error 
 
 # The variables 'green', 'black', and 'red' contain the number of pockets for each color
 green <- 2
