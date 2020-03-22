@@ -38,6 +38,7 @@ sd(S)
 #3. American Roulette Monte Carlo vs CLT
 # Calculate the proportion of outcomes in the vector `S` that exceed $0
 mean(S > 0)
+
 #4. American Roulette average winnings per bet
 # Use the `set.seed` function to make sure your answer matches the expected result after random sampling.
 set.seed(1)
