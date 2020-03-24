@@ -1,1 +1,1 @@
-In this course, I learned the important concepts in probability theory using R.
+In this course, I learned the important concepts in probability theory using R. I have completed this course. Please view my certificate of achievement at https://courses.edx.org/certificates/aad12292ece24d3ba031332def81bfb7
